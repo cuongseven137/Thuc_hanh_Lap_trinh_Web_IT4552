@@ -1,0 +1,67 @@
+.sidebar-container {
+    .sidebar-title-2 button {
+        padding: 10px 10px 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+        &:not(collapsed) {
+            color: #333333;
+            border-bottom: 1px solid #cccccc;
+            box-shadow: none;
+        }
+    }
+    margin-right: 30px;
+    .card-product {
+        padding: 15px 15px 15px 0;
+        .sidebar-product-item {
+            display: flex;
+            margin-bottom: 15px;
+            .sidebar-product-content {
+                padding-left: 30px;
+                p {
+                    display: block;
+                    color: #333333;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                }
+                span {
+                    color: #d30000;
+                    font-weight: bold;
+                    margin-right: 5px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+.collection-header {
+    h1 {
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0 0 15px 0;
+    }
+    p {
+        margin: 0 0 15px 0;
+    }
+
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.collection-filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+
+    label {
+        display: inline-block;
+        margin: 0;
+    }
+
+    select {
+        width: 200px;
+        margin-left: 15px;
+    }
+}
