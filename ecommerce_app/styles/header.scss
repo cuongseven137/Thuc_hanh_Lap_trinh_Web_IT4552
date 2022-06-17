@@ -1,0 +1,216 @@
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.contact-info {
+    p {
+        span,
+        i,
+        a strong {
+            color: #333333;
+        }
+        span {
+            font-size: 12px;
+        }
+
+        i {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+
+        a {
+            strong {
+                font-size: 12px;
+                &:hover {
+                    color: #ffc800;
+                }
+            }
+        }
+        &:nth-child(1) {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+// meta menu
+.menu-meta {
+    .form-search {
+        position: relative;
+        input {
+            width: 260px;
+            padding: 8px 10px;
+            outline: 0;
+            border-radius: 2px;
+            border: 1px solid #f4f4f4;
+            font-size: 12px;
+
+            &:focus {
+                border: 1px solid #333;
+                box-shadow: none;
+            }
+        }
+        button {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            color: #333;
+            background: transparent;
+            border: none;
+            transform: translateY(-50%);
+            margin-right: 5px;
+            &:hover {
+                color: #ffc800;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+            a {
+                color: #333333;
+                font-size: 12px;
+
+                i {
+                    margin-right: 5px;
+                    font-size: 12px;
+                }
+            }
+
+            .dropdown {
+                .dropdown-cus {
+                    padding: 0;
+                    background: transparent;
+                    color: #333333;
+                    border: none;
+                    font-size: 12px;
+
+                    i {
+                        margin-right: 5px;
+                        font-size: 12px;
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            &:first-child {
+                margin-right: 10px;
+            }
+
+            &:hover {
+                a {
+                    color: #ffc800;
+                }
+                .dropdown {
+                    .dropdown-cus {
+                        color: #ffc800;
+                    }
+
+                    .dropdown-menu {
+                        a {
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* menu */
+.nav-bar {
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+}
+.nav-menu li {
+    position: relative;
+    display: inline-block;
+    padding: 0 12px;
+    line-height: 40px;
+
+    a {
+        font-size: 1rem;
+        color: #ffffff;
+        text-transform: capitalize;
+        padding: 5px 0;
+        display: inline-block;
+        &:hover {
+            color: #ffc800;
+        }
+    }
+}
+
+.nav-menu .active a {
+    color: #ffc800;
+}
+
+.dropdown_menu {
+    position: relative;
+}
+.dropdown_menu > ul {
+    position: absolute;
+    margin: 0;
+    min-width: 220px;
+    top: 100%;
+    left: 0px;
+    transition: all 0.3s;
+    transform: translateY(30px);
+    display: none;
+    background: #000;
+    z-index: 10;
+}
+.dropdown_menu > ul > li {
+    text-align: left;
+    width: 100%;
+}
+.dropdown_menu > ul > li a {
+    width: 100%;
+}
+.dropdown-menu-lv2 > ul {
+    top: 0;
+    left: 100%;
+}
+.dropdown_menu:hover > ul {
+    transform: translateY(0);
+    display: block;
+}
+
+li a i {
+    margin-left: 5px;
+}
+
+.menu-right {
+    column-count: 3;
+    width: 300%;
+}
+
+.thumbnail {
+    img {
+        width: 100%;
+    }
+}
+
+// mobile menu
+.mobie-nav {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+
+    .mobile-menu-btn,
+    .mobile-cart-btn {
+        color: #333;
+        padding: 25px 15px 15px 15px;
+        i {
+            font-size: 1.8rem;
+        }
+    }
+}
